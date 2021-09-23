@@ -1,7 +1,5 @@
 <div class="ui secondary menu">
-  <a class="active item">
-    Chatroom
-  </a>
+  <%= link_to "Chatroom", root_path, class: "item" %>
   <a class="item">
     Messages
   </a>
@@ -18,7 +16,7 @@
       </div>
     </div>
     <div class="item">
-        <div class="ui primary button">Sign Up</div>
+        <%= link_to 'Log In', login_path, class: "ui button brown" %>
     </div>
   </div>
 </div>
