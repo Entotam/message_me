@@ -1,0 +1,16 @@
+<div class="summary">
+	<a class="user">
+    <%= message.user.username %>: 
+  </a>
+  <div class="date">
+    Posted <%= time_ago_in_words(message.created_at) %> ago.
+  </div>
+</div>
+<div class="extra text">
+	<%= message.body %>
+</div>
+<div class="meta">
+  <a class="like">
+    <i class="like icon"></i> 4 Likes
+  </a>
+</div>
